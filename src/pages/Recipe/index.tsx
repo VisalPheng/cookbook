@@ -7,8 +7,8 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { recipeSliceActions, recipeSliceSelector } from "redux/slices/recipe";
 import CreateRecipeModal from "./modals/create";
-import DetailRecipeModal from "./modals/detail";
 import EditRecipeModal from "./modals/edit";
+import ShowRecipeModal from "./modals/show";
 
 export default function Recipe() {
   const dispatch = useDispatch();
@@ -83,7 +83,7 @@ export default function Recipe() {
       </Stack>
       <CreateRecipeModal />
       <EditRecipeModal />
-      <DetailRecipeModal />
+      <ShowRecipeModal />
     </Paper>
   );
 }
