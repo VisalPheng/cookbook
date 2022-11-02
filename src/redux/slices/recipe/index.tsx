@@ -62,9 +62,6 @@ const recipeSlice = createSlice({
     setCurrentEdit: (state, action) => {
       state.currentEdit = action.payload;
     },
-    setIsSelectedRecipe: (state, action) => {
-      state.selectedRecipe = action.payload;
-    },
   },
 });
 

@@ -26,7 +26,7 @@ export default function ShowRecipeModal() {
   const { selectedRecipe } = recipeSliceSelector();
 
   const handleClose = () => {
-    dispatch(recipeSliceActions.setIsSelectedRecipe(false));
+    dispatch(recipeSliceActions.selectRecipe(null));
   };
 
   return (
