@@ -1,0 +1,48 @@
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  transition: all 0.3s ease-in-out;
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  transition: all 0.3s ease-in-out;
+  background: #ffffff00;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  transition: all 0.3s ease-in-out;
+  background: rgba(156, 156, 156, 0.9);
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  transition: all 0.3s ease-in-out;
+  background: rgb(211, 211, 211);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+@keyframes rotate3dAnimation {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
